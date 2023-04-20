@@ -5,7 +5,12 @@ import styled from 'styled-components';
 
 const ImgStar = styled.img `
 margin: 5px; 
-
+width: 8%; 
+height: 8%;
+@media (max-width: 1250px) {
+    width: 10%; 
+height: 10%;
+}
 `
 
 function starRanking (props) {

@@ -36,27 +36,6 @@ const Vector = styled.img `
  display: block;  
  margin: 13px 20px 1.4% 0px; 
 `
-/* function Collapse(props) {
-
-    const [isOpen, setIsOpen] = useState(false); 
-
-    return (
-
-        <div className="Collapse-static" >
-             <div className="toggle"  onClick={setIsOpen(!useState)}>
-                  <h3 className="Collapse-title">{props.label}</h3>
-                  {!isOpen? <img src={VectorArrowDown} alt=" arrow down "/>: <img src={VectorArrowUp} alt="Arrow up "/>}
-            </div>
-            { isOpen && 
-               <div className="Collapse-dynamic">
-                  {props.children}
-               </div>
-            }
-
-             </div> 
-    )
-} 
- */
 
 export default function Collapse(props){
 

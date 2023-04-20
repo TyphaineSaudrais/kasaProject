@@ -40,17 +40,18 @@ function Caroussel(props) {
 
 const [displayedImg, setCurrentDisplayedImg] = useState(0);
 
-const endOfPictures = props.length - 1 
-const startOfPictures = props.length === 0 
+const endOfPictures = props.length -1 
+const startOfPictures = props.indexOf(props[0])
 
 function switchforward () {
 
 
-    if (displayedImg === endOfPictures) {
-        setCurrentDisplayedImg(startOfPictures)
+    if (displayedImg < endOfPictures) {
+        setCurrentDisplayedImg(displayedImg + 1)
+       
         
     } else {
-        setCurrentDisplayedImg(displayedImg + 1)
+        setCurrentDisplayedImg(startOfPictures)
     }
   }
   

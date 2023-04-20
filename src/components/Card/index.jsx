@@ -40,6 +40,7 @@ const AppartImg = styled.img `
     width: 100%;
     border-radius: 10px;
     object-fit: cover;
+    filter: contrast(50%);
     `
 
 
@@ -48,6 +49,10 @@ const Card = styled.div `
     display: flex;
     flex-direction: column;
     margin: 0 30px;
+   /*  background: linear-gradient(
+        rgba(0, 0, 0, 0.3), 
+        rgba(0, 0, 0, 0.3)
+      ); */
     @media (max-width: 941px)  {
         width: 80%; 
         margin: auto;
@@ -62,6 +67,14 @@ const Card = styled.div `
     }
    
 `
+
+
+
+    
+
+
+
+
 
 function AppartCard ({ id, title , cover }) {
 

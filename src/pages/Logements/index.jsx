@@ -83,12 +83,16 @@ width: 85%;
 `
 
 const LogementDescription = styled.div `
-    width: 80%; 
+    width: 70%; 
     display: flex; 
     flex-direction: column; 
+    @media (max-width: 768px) {
+        width: 90%;
+        
+    }
 `
 const LogementHost = styled.div `
-    width: 20%;   
+    width: 30%;   
     display: flex; 
     flex-direction: column; 
     margin-top: 35px;
@@ -133,6 +137,7 @@ font-weight: 500;
 
 const LogementTags = styled.ul `
     display: flex; 
+    flex-wrap: wrap;
     list-style: none; 
     padding-inline-start: 0px; 
     
